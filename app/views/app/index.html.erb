@@ -1,0 +1,10 @@
+<div class="card text-center">
+  <div class="card-header">
+    TodoList
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">App em construção!</h5>
+    <p class="card-text">Olá, <%= current_user.try(:email) %>!</p>
+    <%= link_to 'Sing out', destroy_user_session_url, method: :delete, class: 'btn btn-danger' %>
+  </div>
+</div>
