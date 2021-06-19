@@ -48,7 +48,21 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
+# authenticate
 gem 'devise'
 gem 'devise-jwt', '~> 0.7.0'
-gem 'carrierwave'
+gem 'omniauth'
+gem "omniauth-rails_csrf_protection"
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+
+# environments 
 gem "figaro"
+
+# upload
+gem 'carrierwave'
+
+
+# api 
+gem 'rack-cors'
+

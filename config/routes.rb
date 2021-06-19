@@ -5,7 +5,11 @@ Rails.application.routes.draw do
 
   # Routes App 
   get "app", controller: :app, action: :index
-  devise_for :users, controllers: {sessions: 'app/sessions', registrations: 'app/registrations'}
+  devise_for :users, controllers: {
+    sessions: 'app/sessions', 
+    registrations: 'app/registrations', 
+    omniauth_callbacks: 'app/callbacks'
+  }
   namespace :app do 
   
   

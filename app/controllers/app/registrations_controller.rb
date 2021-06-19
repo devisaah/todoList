@@ -1,5 +1,6 @@
 class App::RegistrationsController < Devise::RegistrationsController
-  
+    layout 'devise'
+    
     private
         def sign_up_params
         params.require(:user).permit(
